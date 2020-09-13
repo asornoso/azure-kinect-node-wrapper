@@ -1,0 +1,9 @@
+^C:\USERS\ASORN\DESKTOP\DEVELOPMENT\NODEJS-AZURE-KINECT-API\SDK\BIN\DEPTHENGINE_2_0.DLL
+call mkdir "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\sdk\bin\depthengine_2_0.dll" "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release\depthengine_2_0.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\USERS\ASORN\DESKTOP\DEVELOPMENT\NODEJS-AZURE-KINECT-API\SDK\BIN\K4A.DLL
+call mkdir "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\sdk\bin\k4a.dll" "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release\k4a.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\USERS\ASORN\DESKTOP\DEVELOPMENT\NODEJS-AZURE-KINECT-API\SDK\BIN\K4ARECORD.DLL
+call mkdir "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\sdk\bin\k4arecord.dll" "C:\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\build\Release\k4arecord.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%

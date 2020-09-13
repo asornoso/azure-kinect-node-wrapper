@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Desktop)", "..\Users\asorn\Desktop", "{EEFA1D6E-8046-07D1-260C-F6A52E027C47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Development)", "..\Users\asorn\Desktop\Development", "{2FEEA997-592A-253E-E833-ED46B400EED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(Users)", "..\Users", "{83FD2216-DE8C-3729-D4EA-3618B14F3F2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(asorn)", "..\Users\asorn", "{68E6CE6E-2EB0-97C8-02F0-DA01410200F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node-addon-api)", "..\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\node_modules\node-addon-api", "{C0338E24-D90A-792C-6E4C-4ED2E7F9318E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(node_modules)", "..\Users\asorn\Desktop\Development\nodejs-azure-kinect-api\node_modules", "{F683BC83-5E42-9AE8-B5DE-ACC442BFB0B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "(nodejs-azure-kinect-api)", "..\Users\asorn\Desktop\Development\nodejs-azure-kinect-api", "{8811A0AD-1F00-2A9E-6EE6-F9FDBCEC8809}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AzureKinectDevice", "AzureKinectDevice.vcxproj", "{E0420B7B-E1D8-EA81-E823-A802F17DBD13}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028} = {5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nothing", "..\node_modules\node-addon-api\nothing.vcxproj", "{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}.Release|x64.ActiveCfg = Release|x64
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}.Release|x64.Build.0 = Release|x64
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}.Debug|x64.ActiveCfg = Debug|x64
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028}.Debug|x64.Build.0 = Debug|x64
+		{E0420B7B-E1D8-EA81-E823-A802F17DBD13}.Release|x64.ActiveCfg = Release|x64
+		{E0420B7B-E1D8-EA81-E823-A802F17DBD13}.Release|x64.Build.0 = Release|x64
+		{E0420B7B-E1D8-EA81-E823-A802F17DBD13}.Debug|x64.ActiveCfg = Debug|x64
+		{E0420B7B-E1D8-EA81-E823-A802F17DBD13}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FEEA997-592A-253E-E833-ED46B400EED4} = {EEFA1D6E-8046-07D1-260C-F6A52E027C47}
+		{8811A0AD-1F00-2A9E-6EE6-F9FDBCEC8809} = {2FEEA997-592A-253E-E833-ED46B400EED4}
+		{68E6CE6E-2EB0-97C8-02F0-DA01410200F4} = {83FD2216-DE8C-3729-D4EA-3618B14F3F2D}
+		{EEFA1D6E-8046-07D1-260C-F6A52E027C47} = {68E6CE6E-2EB0-97C8-02F0-DA01410200F4}
+		{5B3E8C30-C842-8CF4-3D8C-0DA4ADEB3028} = {C0338E24-D90A-792C-6E4C-4ED2E7F9318E}
+		{C0338E24-D90A-792C-6E4C-4ED2E7F9318E} = {F683BC83-5E42-9AE8-B5DE-ACC442BFB0B5}
+		{F683BC83-5E42-9AE8-B5DE-ACC442BFB0B5} = {8811A0AD-1F00-2A9E-6EE6-F9FDBCEC8809}
+	EndGlobalSection
+EndGlobal

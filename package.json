@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-azure-kinect-api",
+  "version": "1.0.0",
+  "description": "An updated Nodejs API for Microsoft's Azure Kinect",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "build": "node-gyp build",
+    "rebuild" : "node-gyp rebuild",
+    "clean": "node-gyp clean",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "autogypi": "autogypi",
+    "node-gyp": "node-gyp",
+    "emcc-path": "emcc-path",
+    "copyasm": "copyasm",
+    "ndts": "ndts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Sornoso",
+  "license": "ISC",
+  "devDependencies": {
+    "node-gyp": "^7.1.0"
+  },
+  "dependencies": {
+    "node-addon-api": "^3.0.0"
+  }
+}
