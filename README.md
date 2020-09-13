@@ -1,19 +1,18 @@
-azure-kinect-node-wrapper
-A wrapper for the Azure Kinect SDK < br /> Will only work on Node/Electron Projects. Web based projects cannot utilize Native Addons.
+# azure-kinect-node-wrapper
+A wrapper for the Azure Kinect SDK < br /> Will only work on Node/Electron Projects.  Note: Web based projects cannot utilize Native Addons.
 
-Getting Started
+## Getting Started
 This package allows developers to access the raw image data from Microsoft's Azure Kinect Device. To get started you need:
 -Windows 10
 -Azure Kinect Device
 
-I'd like to setup for Ubuntu 19.04 once I can compile the SDK. So far I was unable to compile on linux which is why I did Windows first.
 
-Installing
+##Installing
 npm i --save node_kinect
 Example Result using Three.js & Electron
 alt text
 
-Example:
+##Example:
 Steps:
 -Require package
 -Create device
@@ -53,7 +52,7 @@ console.log(`Height: ${specs.height} | Width: ${specs.width} | Stride: ${specs.s
 myDevice.releaseImageAndCamera()
 myDevice.stopCameras()
 
-Functions:
+##Functions:
 Create Device Reference:
 let myDevice = new kinect.AzureKinectDeviceWrapper(1)
 Open Device: Returns status code. 0 == successful.
