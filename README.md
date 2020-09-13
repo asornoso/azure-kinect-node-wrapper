@@ -14,17 +14,17 @@ npm i --save node_kinect
 ```
 
 ## Example:
-Steps:
--Require package
--Create device
--Open device
--Configure Mode(Color, IR, Depth)
--Configure FPS(5, 15, 30)
--Start Camera
---Get Frame
---Process Frame Data
---Release Image & Camera
--Stop Camera
+Steps:  
+- Require package  
+- Create device  
+- Open device  
+- Configure Mode(Color, IR, Depth)  
+- Configure FPS(5, 15, 30)  
+- Start Camera  
+-- Get Frame  
+-- Process Frame Data  
+-- Release Image & Camera  
+- Stop Camera  
 
 ```javascript
 const kinect = require('node_kinect')
