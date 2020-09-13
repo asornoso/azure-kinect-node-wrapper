@@ -26,7 +26,7 @@ Steps:
 --Release Image & Camera
 -Stop Camera
 
-```
+```javascript
 const kinect = require('node_kinect')
 
 //Pass in deviceID and TTL
@@ -57,36 +57,36 @@ myDevice.stopCameras()
 ```
 
 ##Functions:
-Create Device Reference:
-```
+###Create Device Reference:
+```javascript
 let myDevice = new kinect.AzureKinectDeviceWrapper(1)
 ```
-Open Device: Returns status code. 
+###Open Device: Returns status code. 
 0 == successful.
-```
+```javascript
 myDevice.openDevice()
 ```
-Configure Depth Mode:
+###Configure Depth Mode:
 0 = K4A_DEPTH_MODE_OFF
 1 = K4A_DEPTH_MODE_NFOV_2X2BINNED
 2 = K4A_DEPTH_MODE_NFOV_UNBINNED
 3 = K4A_DEPTH_MODE_WFOV_2X2BINNED
 4 = K4A_DEPTH_MODE_WFOV_UNBINNED
 5 = K4A_DEPTH_MODE_PASSIVE_IR
-```
+```javascript
 myDevice.configureDepthMode(1)
 ```
-Configure Color Mode:
+###Configure Color Mode:
 0 = K4A_IMAGE_FORMAT_COLOR_MJPG
 1 = K4A_IMAGE_FORMAT_COLOR_NV12
 2 = K4A_IMAGE_FORMAT_COLOR_YUY2
 3 = K4A_IMAGE_FORMAT_COLOR_BGRA32
 4 = K4A_IMAGE_FORMAT_DEPTH16
 5 = K4A_IMAGE_FORMAT_IR16
-```
+```javascript
 myDevice.configureColorFormat(3)
 ```
-Configure Color Resolution:
+###Configure Color Resolution:
 0 = K4A_COLOR_RESOLUTION_OFF
 1 = K4A_COLOR_RESOLUTION_720P
 2 = K4A_COLOR_RESOLUTION_1080P
@@ -94,53 +94,53 @@ Configure Color Resolution:
 4 = K4A_COLOR_RESOLUTION_1536P
 5 = K4A_COLOR_RESOLUTION_2160P
 6 = K4A_COLOR_RESOLUTION_3072P
-```
+```javascript
 myDevice.configureColorResolution(1)
 ```
-Configure FPS:
+###Configure FPS:
 5 = K4A_FRAMES_PER_SECOND_5
 15 = K4A_FRAMES_PER_SECOND_15
 30 = K4A_FRAMES_PER_SECOND_30
-```
+```javascript
 myDevice.configureFPS(15)
 ```
-Start Cameras:
-```
+###Start Cameras:
+```javascript
 myDevice.startCameras()
 ```
-Get Frame: assigns frame to private frame variable of device.
-```
+###Get Frame: assigns frame to private frame variable of device.
+```javascript
 myDevice.getFrame()
 ```
-Get Depth Data Array:
-```
+###Get Depth Data Array:
+```javascript
 myDevice.getDepthData()
 ```
-Get Color Data Array:
-```
+###Get Color Data Array:
+```javascript
 myDevice.getColorData()
 ```
-Get IR Data Array:
-```
+###Get IR Data Array:
+```javascript
 myDevice.getIRData()
 ```
-Get Point Cloud Data Array:
-```
+###Get Point Cloud Data Array:
+```javascript
 myDevice.getPointCloudData()
 ```
-Get Object of Width/Height/ISO/StrideBytes/Timestamp/Whitebalance of Image:
+###Get Object of Width/Height/ISO/StrideBytes/Timestamp/Whitebalance of Image:
 1 = Specifications for Depth Image
 2 = Specifications for Color Image
 3 = Specifications for IR Image
 4 = Specifications for Point Cloud Image
-```
+```javascript
 myDevice.getImageSpecs(int mode)
 ```
-Release All Images(Color, Depth, IR, Point Cloud) and Camera References:
-```
+###Release All Images(Color, Depth, IR, Point Cloud) and Camera References:
+```javascript
 myDevice.releaseImageAndCamera()
 ```
-Stop all Cameras:
-```
+###Stop all Cameras:
+```javascript
 myDevice.stopCameras()
 ```
