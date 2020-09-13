@@ -67,40 +67,40 @@ let myDevice = new kinect.AzureKinectDeviceWrapper(1)
 myDevice.openDevice()
 ```
 ### Configure Depth Mode:
-0 = K4A_DEPTH_MODE_OFF
-1 = K4A_DEPTH_MODE_NFOV_2X2BINNED
-2 = K4A_DEPTH_MODE_NFOV_UNBINNED
-3 = K4A_DEPTH_MODE_WFOV_2X2BINNED
-4 = K4A_DEPTH_MODE_WFOV_UNBINNED
-5 = K4A_DEPTH_MODE_PASSIVE_IR
+0 = K4A_DEPTH_MODE_OFF  
+1 = K4A_DEPTH_MODE_NFOV_2X2BINNED  
+2 = K4A_DEPTH_MODE_NFOV_UNBINNED  
+3 = K4A_DEPTH_MODE_WFOV_2X2BINNED  
+4 = K4A_DEPTH_MODE_WFOV_UNBINNED  
+5 = K4A_DEPTH_MODE_PASSIVE_IR  
 ```javascript
 myDevice.configureDepthMode(1)
 ```
 ### Configure Color Mode:
-0 = K4A_IMAGE_FORMAT_COLOR_MJPG
-1 = K4A_IMAGE_FORMAT_COLOR_NV12
-2 = K4A_IMAGE_FORMAT_COLOR_YUY2
-3 = K4A_IMAGE_FORMAT_COLOR_BGRA32
-4 = K4A_IMAGE_FORMAT_DEPTH16
-5 = K4A_IMAGE_FORMAT_IR16
+0 = K4A_IMAGE_FORMAT_COLOR_MJPG  
+1 = K4A_IMAGE_FORMAT_COLOR_NV12  
+2 = K4A_IMAGE_FORMAT_COLOR_YUY2  
+3 = K4A_IMAGE_FORMAT_COLOR_BGRA32  
+4 = K4A_IMAGE_FORMAT_DEPTH16  
+5 = K4A_IMAGE_FORMAT_IR16  
 ```javascript
 myDevice.configureColorFormat(3)
 ```
 ### Configure Color Resolution:
-0 = K4A_COLOR_RESOLUTION_OFF
-1 = K4A_COLOR_RESOLUTION_720P
-2 = K4A_COLOR_RESOLUTION_1080P
-3 = K4A_COLOR_RESOLUTION_1440P
-4 = K4A_COLOR_RESOLUTION_1536P
-5 = K4A_COLOR_RESOLUTION_2160P
-6 = K4A_COLOR_RESOLUTION_3072P
+0 = K4A_COLOR_RESOLUTION_OFF  
+1 = K4A_COLOR_RESOLUTION_720P  
+2 = K4A_COLOR_RESOLUTION_1080P  
+3 = K4A_COLOR_RESOLUTION_1440P  
+4 = K4A_COLOR_RESOLUTION_1536P  
+5 = K4A_COLOR_RESOLUTION_2160P  
+6 = K4A_COLOR_RESOLUTION_3072P  
 ```javascript
 myDevice.configureColorResolution(1)
 ```
 ### Configure FPS:
-5 = K4A_FRAMES_PER_SECOND_5
-15 = K4A_FRAMES_PER_SECOND_15
-30 = K4A_FRAMES_PER_SECOND_30
+5 = K4A_FRAMES_PER_SECOND_5  
+15 = K4A_FRAMES_PER_SECOND_15  
+30 = K4A_FRAMES_PER_SECOND_30  
 ```javascript
 myDevice.configureFPS(15)
 ```
@@ -129,10 +129,10 @@ myDevice.getIRData()
 myDevice.getPointCloudData()
 ```
 ### Get Object of Width/Height/ISO/StrideBytes/Timestamp/Whitebalance of Image:
-1 = Specifications for Depth Image
-2 = Specifications for Color Image
-3 = Specifications for IR Image
-4 = Specifications for Point Cloud Image
+1 = Specifications for Depth Image  
+2 = Specifications for Color Image  
+3 = Specifications for IR Image  
+4 = Specifications for Point Cloud Image  
 ```javascript
 myDevice.getImageSpecs(int mode)
 ```
